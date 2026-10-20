@@ -1,9 +1,17 @@
 # SPI Master RTL — Verilog + Testbench
 
-> **Important context:** This is a new, educational SPI Master RTL example created as a code-based portfolio project. The uploaded Maven Silicon/Qflow report describes a physical-design workflow but does not include the original SPI RTL source. This code must not be represented as the exact RTL used in that training project.
+## Project Overview
 
-## Overview
-A small, synthesizable SPI master controller in Verilog for **SPI Mode 0** (`CPOL=0`, `CPHA=0`). It transmits one 8-bit word on MOSI and receives one 8-bit word on MISO.
+This project demonstrates SPI (Serial Peripheral Interface) communication using Verilog RTL and functional simulation. It illustrates how an SPI master transmits and receives serial data using clock generation, shift registers, and control signals.
+
+The simulation demonstrates the transmission of `0x3C` and the reception of `0xA5` from a simulated SPI slave. The RTL code, testbench, and waveform provide an example of the data-transfer process and its verification.
+
+## Maven Silicon — VLSI Physical Design Project
+
+As part of my VLSI Physical Design training at Maven Silicon, I worked on an SPI-related physical-design project using Qflow. The accompanying project report presents the physical-design workflow, including synthesis, placement, timing analysis, routing, DRC, LVS, and layout generation, as documented in the report.
+
+Together, these materials showcase my understanding of SPI communication, Verilog RTL simulation, and VLSI physical-design concepts.
+
 
 ## Features
 - 8-bit transmit and receive data
